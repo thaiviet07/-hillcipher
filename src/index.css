@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap');
+
+:root {
+  /* Google Material 3 Palette */
+  --bg-primary:    #FFFFFF;
+  --bg-secondary:  #F8F9FA;
+  --bg-surface:    #FFFFFF;
+  --bg-elevated:   #F1F3F4;
+  --bg-subtle:     #E8F0FE;
+
+  /* Google Brand Colors */
+  --google-blue:   #4285F4;
+  --google-red:    #EA4335;
+  --google-yellow: #FBBC05;
+  --google-green:  #34A853;
+
+  /* Typography */
+  --font-display: 'Outfit', 'Google Sans', sans-serif;
+  --font-mono:    'JetBrains Mono', monospace;
+  
+  --text-primary:   #202124;
+  --text-secondary: #5F6368;
+  --text-muted:     #70757A;
+
+  /* Elevation */
+  --shadow-sm: 0 1px 2px rgba(60,64,67,0.3), 0 1px 3px 1px rgba(60,64,67,0.15);
+  --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+
+  /* Radius */
+  --radius-sm: 12px;
+  --radius-md: 24px;
+  --radius-lg: 32px;
+  --radius-full: 9999px;
+
+  /* State */
+  --state-valid:   var(--google-green);
+  --state-invalid: var(--google-red);
+  --state-warning: var(--google-yellow);
+  --state-info:    var(--google-blue);
+
+  /* Block colors (Google Palette) */
+  --block-1: #4285F4;
+  --block-2: #EA4335;
+  --block-3: #FBBC05;
+  --block-4: #34A853;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* Custom Scrollbar — Google Style */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #DADCE0;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #BDC1C6;
+}
+
+/* Global Transitions */
+button, input, a {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Selection */
+::selection {
+  background: var(--bg-subtle);
+  color: var(--google-blue);
+}
+
+/* Layout Utilities */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Material Card */
+.card {
+  background: var(--bg-surface);
+  border-radius: var(--radius-md);
+  padding: 2rem;
+  border: 1px solid #DADCE0;
+  box-shadow: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-sm);
+}
+
+/* Lecture Mode Overrides */
+body.lecture-mode {
+  transform-origin: top center;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body.lecture-mode main {
+  max-width: 1600px !important;
+  padding: 4rem !important;
+}
+
+/* KaTeX Overrides */
+.katex-display {
+  margin: 1.5em 0 !important;
+  padding: 1rem !important;
+  background: #F8F9FA;
+  border-radius: 12px;
+}
