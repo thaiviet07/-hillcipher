@@ -1,9 +1,9 @@
 /**
  * InverseWalkthrough — High-fidelity wizard-style matrix inversion lesson
  */
-import React, { useState, useMemo } from 'react';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { BlockMath, InlineMath } from 'react-katex';
+import { BlockMath } from 'react-katex';
 import { mod, gcd, modInverse } from '../../math/modular';
 import { getDeterminant, getAdjugate, getInverseMod26 } from '../../math/matrix';
 import { useCipherStore } from '../../store/cipherStore';
@@ -84,7 +84,7 @@ export const InverseWalkthrough: React.FC = () => {
   const [stepIndex, setStepIndex] = useState(0);
 
   const workMatrix = useCurrentKey ? storeMatrix : [[3, 3], [2, 5]];
-  const { steps, valid } = buildSteps(workMatrix);
+  const { steps } = buildSteps(workMatrix);
   const activeStep = steps[stepIndex];
 
   return (

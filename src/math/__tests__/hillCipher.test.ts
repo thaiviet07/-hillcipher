@@ -94,7 +94,7 @@ describe('encrypt()', () => {
 
   test('auto-pads odd-length messages', () => {
     // "HELLO" → "HELLOX" (padded) → 3 blocks of 2
-    const { result, steps } = encrypt('HELLO', K);
+    const { steps } = encrypt('HELLO', K);
     expect(steps).toHaveLength(3);
     // Verify the last block included the padding X
     expect(steps[2].plainText).toBe('OX');

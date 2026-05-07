@@ -5,7 +5,6 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { BlockMath, InlineMath } from 'react-katex';
 import { gcd, mod } from '../../math/modular';
-import { Badge } from '../ui/Badge';
 
 export const InvertibilityViz: React.FC = () => {
   const [detInput, setDetInput] = useState(15);

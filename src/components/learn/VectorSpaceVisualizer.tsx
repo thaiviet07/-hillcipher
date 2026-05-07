@@ -5,7 +5,7 @@ import React, { useState, useMemo, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useCipherStore } from '../../store/cipherStore';
 import { mod } from '../../math/modular';
-import { BlockMath, InlineMath } from 'react-katex';
+import { InlineMath } from 'react-katex';
 
 export const VectorSpaceVisualizer: React.FC = () => {
   const { matrix, matrixSize } = useCipherStore();

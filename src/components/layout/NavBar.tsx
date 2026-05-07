@@ -2,7 +2,6 @@
  * NavBar — Google-style navigation with Material 3 refinements
  */
 import React from 'react';
-import { motion } from 'framer-motion';
 import { useCipherStore } from '../../store/cipherStore';
 
 interface NavBarProps {

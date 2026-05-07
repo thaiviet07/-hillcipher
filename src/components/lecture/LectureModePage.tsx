@@ -2,7 +2,7 @@
  * LectureModePage — Dedicated immersive presentation view
  */
 import React from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { BlockMath } from 'react-katex';
 import { useCipherStore } from '../../store/cipherStore';
 import { BLOCK_COLORS } from '../../constants/alphabet';

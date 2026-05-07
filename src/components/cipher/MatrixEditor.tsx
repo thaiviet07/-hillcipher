@@ -2,7 +2,6 @@
  * MatrixEditor — Premium Material Design 3 Matrix Interface
  */
 import React from 'react';
-import { motion } from 'framer-motion';
 import { useCipherStore } from '../../store/cipherStore';
 
 import { MatrixPresets } from './MatrixPresets';

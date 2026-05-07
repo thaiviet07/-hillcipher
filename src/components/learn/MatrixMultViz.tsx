@@ -2,8 +2,7 @@
  * MatrixMultViz — Card 2 interactive visualization
  */
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { BlockMath, InlineMath } from 'react-katex';
+import { InlineMath } from 'react-katex';
 import { mod } from '../../math/modular';
 
 const ROW_COLORS = ['#4285F4', '#EA4335'];

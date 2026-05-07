@@ -2,7 +2,7 @@
  * Toast — Google-style subtle notification
  */
 import React, { useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 interface ToastProps {
   message: string;
