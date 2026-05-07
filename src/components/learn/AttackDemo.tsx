@@ -2,7 +2,7 @@
  * AttackDemo — High-fidelity interactive known-plaintext attack walkthrough
  */
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { BlockMath } from 'react-katex';
 
 const TERMINAL_GREEN = '#34A853';
