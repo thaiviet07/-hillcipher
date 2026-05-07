@@ -22,3 +22,19 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+*.tsbuildinfo
+
+# Build artifacts
+.vercel
+.next
+.output
+.temp
+
+# Gemini / Antigravity
+.gemini
+.antigravity
+.antigravityignore
+
+# Vite
+.vite
+.env*.local
